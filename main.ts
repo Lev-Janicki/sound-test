@@ -1,4 +1,8 @@
-if (input.soundLevel() > 10) {
-    light.setAll(color.rgb(255, 0, 255))
+while (true) {
+    if (input.soundLevel() > 150) {
+        light.showAnimation(light.rainbowAnimation, 500)
+    } else {
+        light.clear()
+    }
+    
 }
-
